@@ -1,0 +1,13 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+header {
+    background: #f8b400;
+    padding: 10px 20px;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}

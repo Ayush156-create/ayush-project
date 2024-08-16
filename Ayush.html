@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 p-8">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+        <!-- Header Section -->
+        <div class="flex flex-col items-center md:flex-row md:justify-between md:items-start">
+            <div class="flex items-center space-x-4">
+                <!-- HTML -->
+<div class="image-container">
+    <img id="c:\Users\ayush\Desktop\download (1).jpeg" src="image1.jpg" alt="Image 1">
+    <img id="c:\Users\ayush\Desktop\download.jpeg" src="image2.jpg" alt="Image 2">
+    <img id="c:\Users\ayush\Desktop\download.jpeg" src="image3.jpg" alt="Image 3">
+  </div>
+  
+  <!-- CSS -->
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image-container img {
+    width: 30%; /* adjust the width to your liking */
+    cursor: pointer; /* change the cursor to a hand on hover */
+  }
+  
+  <!-- JavaScript -->
+  const images = document.querySelectorAll('.image-container img');
+  
+  images.forEach((image) => {
+    image.addEventListener('click', () => {
+      const currentIndex = images.indexOf(image);
+      let newIndex = currentIndex + 1;
+      if (newIndex >= images.length) {
+        newIndex = 0;
+      }
+      images[currentIndex].src = images[newIndex].src;
+    });
+  });
+  
+                    im
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Ayush Adhikari</h1>
+                    <p class="text-xl text-gray-600">Art Director</p>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <ul class="text-gray-600">
+                    <li><i class="fas fa-phone-alt"></i> +977-9844052450</li>
+                    <li><i class="fas fa-envelope"></i> hello@reallygreatsite.com</li>
+                    <li><i class="fas fa-globe"></i> www.reallygreatsite.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Anywhere St., Any City, ST 12345</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">About Me</h2>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem
+                at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum elit at dui
+                tristique feugiat.</p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Work Experience</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Digital Marketing Manager</h3>
+                    <p class="text-gray-600">Company Name | Jan 2022 - Present | 123 Anywhere St., Any City</p>
+                    <p class="text-gray-600 mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        pharetra in lorem at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu
+                        elementum.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Social Media Manager</h3>
+                    <p class="text-gray-600">Company Name | 2017 - 2019 | 123 Anywhere St., Any City</p>
+                    <p class="text-gray-600 mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        pharetra in lorem at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu
+                        elementum.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Social Media Manager</h3>
+                    <p class="text-gray-600">Company Name | 2015 - 2017 | 123 Anywhere St., Any City</p>
+                    <p class="text-gray-600 mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        pharetra in lorem at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu
+                        elementum.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Education</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Bachelor of Design</h3>
+                    <p class="text-gray-600">Wardiere University | 2006 - 2008</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800">Bachelor of Design</h3>
+                    <p class="text-gray-600">Wardiere University | 2006 - 2008</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Expertise</h2>
+            <ul class="list-disc list-inside text-gray-600">
+                <li>Web Design</li>
+                <li>Branding</li>
+                <li>Graphic Design</li>
+                <li>SEO</li>
+                <li>Marketing</li>
+            </ul>
+        </section>
+
+        <!-- Language Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Language</h2>
+            <p class="text-gray-600">English, French</p>
+        </section>
+
+        <!-- References Section -->
+        <section class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">References</h2>
+            <div class="space-y-4">
+                <div>
+                    <p class="text-lg font-semibold text-gray-800">Estelle Darcy</p>
+                    <p class="text-gray-600">Wardiere Inc. / CEO</p>
+                    <p class="text-gray-600"><i class="fas fa-phone-alt"></i> +123-456-7890</p>
+                    <p class="text-gray-600"><i class="fas fa-envelope"></i> hello@reallygreatsite.com</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-gray-800">Harper Russo</p>
+                    <p class="text-gray-600">Wardiere Inc. / CEO</p>
+                    <p class="text-gray-600"><i class="fas fa-phone-alt"></i> +123-456-7890</p>
+                    <p class="text-gray-600"><i class="fas fa-envelope"></i> hello@reallygreatsite.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
